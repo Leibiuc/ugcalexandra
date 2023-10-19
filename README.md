@@ -1,1 +1,1 @@
-Toti prostii intra aici 🤪🤪🤪🤪🤪🤪
+Toti prostii vad asta  🤪🤪🤪🤪🤪🤪
