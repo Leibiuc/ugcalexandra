@@ -1,1 +1,0 @@
-Toti prostii vad asta  🤪🤪🤪🤪🤪🤪
