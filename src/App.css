@@ -16,9 +16,6 @@ img {
   object-fit: cover;
 }
 
-div {
-  border-radius: 10px;
-}
 .logo:hover {
   filter: drop-shadow(0 0 2em #64b4ffaa);
 }
