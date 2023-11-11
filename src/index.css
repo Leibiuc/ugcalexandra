@@ -3,12 +3,11 @@
 @tailwind utilities;
 
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+  font-family: "Playfair Display", serif;
+  font-weight: 100;
 
   color-scheme: light dark;
-  color: rgba(53, 50, 50, 0.87);
+  color: #000000de;
   background-color: #f6eef8;
 
   font-synthesis: none;
@@ -22,6 +21,6 @@ body {
   margin: 0;
   display: flex;
   place-items: center;
-  min-width: 320px;
+  min-width: 280px;
   min-height: 100vh;
 }

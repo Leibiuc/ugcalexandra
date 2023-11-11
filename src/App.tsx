@@ -1,12 +1,8 @@
 import "./App.css";
+import { Greeting } from "./components/Sections/Greeting";
 
-import { Header } from "./components/Header";
 const App = () => {
-  return (
-    <>
-      <Header />
-    </>
-  );
+  return <Greeting />;
 };
 
 export default App;
