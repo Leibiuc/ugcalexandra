@@ -14,7 +14,7 @@ export const Social: React.FC<Props> = ({ className }) => {
     {
       name: "Instagram",
       icon: <PiInstagramLogo className="w-10 h-10 sm:w-20 sm:h-20" />,
-      link: "https://www.instagram.com/",
+      link: "https://www.instagram.com/_alexandra_anca_/",
     },
   ];
 

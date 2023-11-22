@@ -3,23 +3,25 @@
 @tailwind utilities;
 
 :root {
-  font-family: "Playfair Display", serif;
   font-weight: 100;
 
   color-scheme: light dark;
   color: #000000de;
-  background-color: #f6eef8;
+  background: linear-gradient(
+    to right,
+    rgb(255, 255, 255),
+    rgb(255, 255, 255),
+    rgb(235, 234, 231)
+  );
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+}
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
-  display: flex;
   place-items: center;
   min-width: 280px;
   min-height: 100vh;
