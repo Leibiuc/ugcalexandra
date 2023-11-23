@@ -1,4 +1,3 @@
-import React from "react";
 import bgale1 from "../../assets/bgale1.jpeg";
 import { Social } from "../Social";
 import { Header } from "../Header";
