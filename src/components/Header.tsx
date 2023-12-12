@@ -9,10 +9,10 @@ export const Header = () => {
 
   return (
     <>
-      <div className="bg-[#f5eddb] px-4 py-2 w-full gap-4 font-semibold flex items-center justify-end md:hidden">
+      <div className="bg-amber-50 z-10 fixed px-4 py-1 w-full gap-4 font-semibold flex items-center justify-end md:hidden">
         <button onClick={toggleMenu}>
           <svg
-            className="w-8 h-8 text-gray-800 cursor-pointer"
+            className="w-5 h-5 text-gray-800 cursor-pointer"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -28,36 +28,50 @@ export const Header = () => {
         </button>
       </div>
 
-      <div className="bg-[#f5eddb] px-4 py-2 w-full gap-4 font-semibold md:flex items-center hidden  justify-end">
-        <a href="#videos">Videoclipuri</a> <a href="#videos">Videoclipuri</a>{" "}
-        <a href="#videos">Videoclipuri</a> <a href="#videos">Videoclipuri</a>{" "}
-        <a href="#videos">Videoclipuri</a> <a href="#videos">Videoclipuri</a>{" "}
+      {/* Dark overlay */}
+      {isMenuOpen && (
+        <div
+          className="fixed inset-0 bg-black bg-opacity-50 z-9"
+          onClick={toggleMenu}
+        ></div>
+      )}
+
+      <div className="bg-amber-50 z-10 fixed px-4 py-1 w-full gap-4 font-semibold md:flex items-center hidden  justify-end">
+        <a href="#Hi!">Hi!</a>
         <a href="#videos">Videoclipuri</a>
+        <a href="#info">Info</a>
+        <a href="#creation">Procesul de creare</a>
+        <a href="#videos">Despre mine</a>
+        <a href="#videos">Beneficii UGC</a>
+        <a href="#videos">Contact</a>
       </div>
 
       <div
-        className={`md:hidden fixed inset-0 bg-[#f5eddb] w-1/2 z-10 text-center py-2 px-4 transition-transform transform ${
+        className={`md:hidden fixed inset-0 bg-amber-50 w-1/2 z-10 h-full rounded-md text-center py-1 px-4 transition-transform transform ${
           isMenuOpen ? "translate-x-0" : "-translate-x-full"
         }`}
       >
-        <div>
-          <a href="#videos" onClick={toggleMenu} className="block py-2">
+        <div className="font-semibold flex h-full flex-col justify-around">
+          <a href="#Hi!" onClick={toggleMenu}>
+            Hi!
+          </a>
+          <a href="#videos" onClick={toggleMenu}>
             Videoclipuri
           </a>
-          <a href="#videos" onClick={toggleMenu} className="block py-2">
-            Videoclipuri
+          <a href="#info" onClick={toggleMenu}>
+            Info
           </a>
-          <a href="#videos" onClick={toggleMenu} className="block py-2">
-            Videoclipuri
+          <a href="#creation" onClick={toggleMenu}>
+            Procesul de creare
           </a>
-          <a href="#videos" onClick={toggleMenu} className="block py-2">
-            Videoclipuri
+          <a href="#videos" onClick={toggleMenu}>
+            Despre mine
           </a>
-          <a href="#videos" onClick={toggleMenu} className="block py-2">
-            Videoclipuri
+          <a href="#videos" onClick={toggleMenu}>
+            Beneficii UGC
           </a>
-          <a href="#videos" onClick={toggleMenu} className="block py-2">
-            Videoclipuri
+          <a href="#videos" onClick={toggleMenu}>
+            Contact
           </a>
         </div>
       </div>

@@ -14,26 +14,6 @@ export const Videos = ({ ...rest }) => {
               key={index}
               videoSource={video}
             />
-            <VideoPlayer
-              description="Descriere"
-              key={index}
-              videoSource={video}
-            />
-            <VideoPlayer
-              description="Descriere"
-              key={index}
-              videoSource={video}
-            />
-            <VideoPlayer
-              description="Descriere"
-              key={index}
-              videoSource={video}
-            />
-            <VideoPlayer
-              description="Descriere"
-              key={index}
-              videoSource={video}
-            />
           </>
         ))}
       </div>

@@ -7,14 +7,13 @@
 
   color-scheme: light dark;
   color: #000000de;
-  background: linear-gradient(
+  background: white;
+  /* linear-gradient(
     to right,
     rgb(255, 255, 255),
     rgb(255, 255, 255),
     rgb(235, 234, 231)
-  );
-
-  -webkit-font-smoothing: antialiased;
+  ); */
 }
 html {
   scroll-behavior: smooth;

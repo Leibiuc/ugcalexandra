@@ -2,18 +2,21 @@ import bgale1 from "../../assets/bgale1.jpeg";
 import { Social } from "../Social";
 import { Header } from "../Header";
 
-export const Greeting = () => {
+export const Greeting = ({ ...rest }) => {
   return (
-    <div className="relative flex flex-col items-center justify-between h-screen overflow-hidden">
-      <Header />
-
+    <div
+      className="relative flex flex-col items-center  h-screen overflow-hidden"
+      {...rest}
+    >
       <div
         className="absolute -z-10 inset-0 bg-center bg-cover brightness-[0.4]"
         style={{ backgroundImage: `url(${bgale1})` }}
       />
 
-      <div className="text-white text-center mt-8 px-4">
-        <div className="text-3xl sm:text-6xl lg:text-9xl xl:text-[12rem]">
+      <Header />
+
+      <div className="text-white text-center mt-48 px-4 flex-1 font-playfair">
+        <div className="text-6xl sm:text-9xl lg:text-[10rem] xl:text-[12rem]">
           Anca Alexandra
         </div>
 
